@@ -1,0 +1,187 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	color: #fff;
+	overflow:auto;
+}
+.pagina1{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/LaTanaDelGamer/immagini/sfondo5.jpg);
+    width:100%;
+    height: 100%;
+    top:70px;
+    box-shadow: 0 0 60px 60px #000000 inset;
+    min-height: 739px;
+}
+
+
+.tabella{
+	width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top:5em;
+}
+
+.titolo{
+	border : 2px solid;
+}
+button{
+	background-color: var(--blu);
+    border: 2px solid;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    transition: opacity .3s ease;	
+    text-decoration: none;
+    font-size: 15px;
+    transition : 0.6s;
+}
+
+button:hover{
+	background-color: white;
+	color: var(--blu);
+	transition : 0.6s;
+}
+
+p {
+	color : white;
+}
+.noOrder{
+	color : white;
+}
+
+.tab1{
+	width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: var(--blu);
+}
+
+
+.tab1 th{
+	padding-right: 5px;
+    padding-bottom: 7px;
+    color: var(--blu);
+    padding-top: 23px;
+}
+
+.tab1 td{
+	padding:15px;
+	margin-top:10px;
+}
+.tab2{
+	width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: var(--blu);
+    margin-bottom : 290px;
+}
+
+
+.tab2 th{
+	padding-right: 5px;
+    padding-bottom: 7px;
+    color: var(--blu);
+    padding-top: 23px;
+}
+
+.tab2 td{
+	padding:15px;
+	margin-top:10px;
+}
+
+.noOrdini{
+	width: 90%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: var(--blu);
+    transform: translate(0, 400%);
+}
+@media only screen and (max-width: 1000px) { 
+     /* Forza la tabella a non comportarsi come una normale tabella */ 
+  	
+ 	#tabella table,  
+ 	#tabella thead,  
+ 	#tabella tbody,  
+ 	#tabella th,  
+ 	#tabella td,  
+ 	#tabella tr {  
+ 		display: block;  
+ 	} 
+  
+ 	/* Nasconde le intestazioni della tabella */ 
+  
+  	.tab1{
+  		border : none;
+  	}
+  
+ 	#tabella thead tr {  
+ 		position: absolute; 
+ 		top:-9999px; 
+ 		left:-9999px; 
+ 	} 
+   
+ 	#tabella tr {    
+ 	 	border: 4px solid var(--blu); 
+ 	 	border-radius: 10px;
+    	margin-top: 17px;
+ 	 } 
+  
+ 	#tabella td {  
+ 		/* Inserisce il comportamento come una riga */ 
+  
+ 	border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    padding-top: 30px;
+    text-align: left;
+ 	} 
+  
+ 	#tabella td:before {  
+ 		/* Inserisce il comportamento come un'intestazione di tabella */ 
+  
+ 		position: absolute; 
+ 		/* I valori top/left agiscono come padding */ 
+  
+ 		top: 0; 
+ 		left: 6px; 
+ 		width: 45%;  
+ 		padding-right: 10px;  
+ 		white-space: nowrap; 
+ 		text-align:left; 
+ 		font-weight: bold; 
+ 	} 
+  
+  	.tab2{
+  	border : none;
+  	}
+ 	
+ 	
+ 	/* Aggiunge l'etichetta ai dati della tabella */ 
+  
+ 	#tabella td:before { 
+ 		content: attr(data-title);
+ 		color: var(--blu);
+ 	} 
+ }  
+ 
+ @media only screen and (max-width: 480px){
+ 	#tabella td{
+ 	padding-left : 10%;
+ 	}
+ }
+ 
+ @media only screen and (max-width: 361px) {
+ 	.noOrdini{
+ 	transform: translate(0, 200%);
+ 	}
+ }

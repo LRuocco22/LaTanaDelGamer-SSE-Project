@@ -1,0 +1,190 @@
+.pagina1{
+	
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/LaTanaDelGamer/immagini/sfondo.jpg);
+    width:100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    box-shadow: 0 0 60px 60px #000000 inset;
+    min-height: 728px;
+}
+
+@media only screen and (max-width: 850px) {
+	.pagina1{
+	 background-size: unset;
+	}
+}
+
+.descrizioneCategoria{
+	width:80%;
+	margin:auto;
+	margin-top:40px;
+	margin-bottom: 50px;
+	color:white;
+	border: 3px solid var(--blu);
+	border-radius : 11px;
+	text-align:center;
+}
+
+.prodotti{
+  	display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin: auto;
+    margin-top: 50px;
+  
+}
+
+.prodotto{
+	border: 5px solid white;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: 340px;
+    margin: auto;
+    margin-bottom:20px;
+	
+}
+
+.contenitoreFoto{
+	height:75%;
+	width:100%;
+}
+
+.contenitoreInfo{
+	height:25%;
+	width:100%;
+	background:white;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.copertina{
+	width:100%;
+	height:100%;
+}
+
+.foto{
+	width:100%;
+	height:100%;
+	border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.nome{
+	height:35%;
+	
+}
+
+.bottone{
+	height:65%;
+	width: 99%;
+}
+
+.titolo{
+	border: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.titolo:hover{
+	color: var(--blu);
+}
+
+.aggiungi{
+	height: 93%;
+    width: 99%;
+    background: var(--blu);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 17px;
+    border-bottom-right-radius: 16px;
+    border: 2px solid var(--blu);
+    text-transform: uppercase;
+    color: cornsilk;
+    transition : 0.4s;
+}
+
+.aggiungi:hover{
+	background:black;
+	color: var(--blu);
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 17px;
+    border-bottom-right-radius: 16px;
+    border: 2px solid black;
+	font-size : 0.88em;
+	transition : 0.2s;
+}
+
+.noProd{
+	color:white;
+	text-align:center;
+	width:fit-content;
+	margin:auto;
+}
+
+.filtro{
+	border: 2px solid var(--blu);
+    padding: 0 18px;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 11px;
+}
+
+.formFiltro{
+	display:flex;
+	flex-direction: unset;
+	    justify-content: space-around;
+}
+
+@media screen and (max-width: 904px) {
+	.filtro{
+    width:60%;
+	}
+	
+	.formFiltro{
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.filtro{
+	width:fit-content;
+	}	
+	
+	.formFiltro{
+	align-items: center;
+	    flex-direction: column;
+	}
+}
+
+.bottoneFiltra{
+	background-color: var(--blu);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 2px 20px;
+    margin: auto 0px;
+	transition:0.2s;
+}
+
+.bottoneFiltra:hover{
+	border:2px solid black;
+	color:black;
+	transition:0.2s;	
+}
+.valore{
+	margin:10px;
+}
+.filtro select{
+	border-radius: 10px;
+    padding: 0 7px;
+    border: 3px solid var(--blu);
+}

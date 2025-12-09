@@ -1,0 +1,268 @@
+:root{
+	overflow-x: hidden;
+}
+
+.pagina1{
+	
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.8)), url(/LaTanaDelGamer/immagini/sfondo3.jpg);
+    width:100%;
+    height: 100%;
+    
+    background-position: center center;
+    position: relative;
+    box-shadow: 0 0 60px 60px #000000 inset;
+    color:white;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 850px) {
+	.pagina1{
+	 background-size: unset;
+	}
+}
+
+.lastRelease{
+	box-shadow: 1px 1px 100px #000;
+	margin-top: 60px;
+}
+
+.boxText{
+    margin-left: 8%;
+	width: fit-content;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.titoloBox{
+	margin-bottom:0;
+	
+}
+
+.descrizioneBox{
+	margin-top:0;
+	color:gray;
+}
+
+
+.slider
+{
+    width: 800px;
+    height: 400px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position:relative;
+    
+}
+
+
+.frecciaSinistra{
+	width:50px;
+	height:50px;
+	position:absolute;
+	left:15px;
+	top:45%;
+	z-index:1;
+	cursor:pointer;
+}
+
+.frecciaSinistra:hover{
+	width:55px;
+	height:55px;
+	transition:0.2s;
+}
+
+.frecciaDestra{
+	width:50px;
+	height:50px;
+	position:absolute;
+	right:5px;
+	top:45%;
+	z-index:1;
+	cursor:pointer;
+}
+
+.frecciaDestra:hover{
+	width:55px;
+	height:55px;
+	transition:0.2s;
+}
+
+
+
+.bottoni
+{
+	position: relative;
+	top: -20px;
+}
+
+.bottoneFoto
+{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: brown;
+}
+
+.immagine-slider1, .immagine-slider2, .immagine-slider3{
+	width:100%;
+	height:400px;
+	position:absolute;
+	margin-left:0px;
+	border: 4px solid var(--blu);
+	border-radius: 8px;
+	object-fit: cover;
+	box-shadow: 7px 7px 60px #00ffff6b;
+}
+
+.immagine-slider2{
+	margin-left:800px;
+	visibility:hidden;
+	
+	
+}
+.immagine-slider3{
+	margin-left:800px;
+	visibility:hidden;
+}
+
+
+@media screen and (max-width: 870px) {
+  .slider {
+    max-width: 88%;
+  }
+}
+
+
+
+
+/*CSS PRODOTTI*/
+
+.prodotti{
+  	display: flex;
+width: 80%;
+flex-wrap: wrap;
+margin-left: 50px;
+margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+margin-top: 10px;
+margin-bottom: 50px;
+  
+}
+
+.prodotto{
+	border: 5px solid white;
+	border-radius: 20px;
+	text-align: center;
+	width: 200px;
+	height: 340px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-left:15px;
+	
+}
+
+@media screen and (max-width: 571px) {
+  .prodotto {
+    margin :auto;
+    margin-bottom:10px;
+  }
+}
+
+
+
+.contenitoreFoto{
+	height:75%;
+	width:100%;
+}
+
+.contenitoreInfo{
+	height:25%;
+	width:100%;
+	background:white;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.copertina{
+	width:100%;
+	height:100%;
+}
+
+.foto{
+	width:100%;
+	height:100%;
+	border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.nome{
+	height:35%;
+	
+}
+
+.bottone{
+	height:65%;
+	width: 99%;
+}
+
+.titolo{
+	border: none;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.titolo:hover{
+	color: var(--blu);
+}
+
+.aggiungi{
+	height: 93%;
+    width: 99%;
+    background: var(--blu);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 17px;
+    border-bottom-right-radius: 16px;
+    border: 2px solid var(--blu);
+    text-transform: uppercase;
+    color: cornsilk;
+    transition : 0.4s;
+}
+
+.aggiungi:hover{
+	background:black;
+	color: var(--blu);
+	border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 17px;
+    border-bottom-right-radius: 16px;
+    border: 2px solid black;
+	font-size : 0.88em;
+	transition : 0.2s;
+}
+
+.moreProducts{
+	text-align: center;
+    width: fit-content;
+    margin: auto;
+    border: 2px solid var(--primary);
+    color: white;
+    transition: 0.2s;
+    text-decoration: none;
+    padding: 7px 36px;
+}
+
+.moreProducts:hover{
+	border : 2px solid white;
+	color:var(--blu);
+	transition:0.2s;
+}
+
+.sfogliaTutto{
+	text-decoration: none;
+    color: white;
+}

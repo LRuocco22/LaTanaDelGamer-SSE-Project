@@ -1,0 +1,386 @@
+.pagina1{
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/LaTanaDelGamer/immagini/sfondo6.jpg);
+    width:100%;
+    height: 100%;
+    top:70px;
+    box-shadow: 0 0 60px 60px #000000 inset;
+}
+
+
+.recensioneProdotto{
+	width: 500px;
+    height: 200px;
+    border: 3px solid var(--blu);
+    margin: auto;
+    margin-top: 30px;   
+    background: linear-gradient(#0000002b,#f2f2f20f);
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #00ffff6b;
+}
+
+.nomeUtente{
+	 font-weight: bolder;
+	 height: 20%;
+	 color: white;
+	 margin-left: 15px;
+}
+.stelle{
+	width:26%;
+	height:73%;
+	margin-left: 15px;
+}
+
+.valutazione{
+	height: 20%;
+	color: white;
+}
+
+.descrizione{
+	height: 60%;
+	color: white;
+	margin-left: 15px;
+}
+
+.prodotto{
+	width: 995px;
+    height: 554px;
+    border: 3px solid var(--blu);
+    margin: auto;
+    margin-top: 30px;
+    display:flex;
+    
+    background: linear-gradient(#0000002b,#f2f2f20f);
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #00ffff6b;
+}
+
+.galleria{
+	margin-top: 30px;
+    width: 35%;
+    height: 530px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linkGen{
+	color:white;
+}
+
+.aggiunto{
+	color: var(--blu);
+    font-weight: bolder;
+    border: 2px solid;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+.contenitoreCopertina{
+	float: left;
+    width: 290px;
+    max-height: 425px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 4px solid var(--blu);
+}
+
+.copertina{
+	width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.inserisciRec{
+	margin-top: 5%;
+    margin-left: 16%;
+}
+
+.bottoneRec:hover{
+	border: 3px solid var(--blu);
+	color: white;
+	font-size : 1.25em;
+	border-radius:2px;
+	transition : 0.3s;
+}
+
+.bottoneRec{
+	background: transparent;
+    color: white;
+    font-size: 1.2em;
+    border: 2px solid var(--blu);
+    border-radius: 8px;
+    transition : 0.3s;
+}
+.foto{
+	height: 100%;
+    width: 62px;
+    margin-left: 21px;
+    border: 2px solid white;
+	
+}
+
+.schedaProdotto{
+	width: 75%;
+    padding-left: 20px;
+}
+
+.nome{
+	color:white;
+	text-align:center;
+}
+
+.nome h1{
+	text-transform : uppercase;
+}
+
+.casaProduttrice{
+	color : white;
+	font-size:0.7em;
+}
+
+.dettagli{
+	margin-top: 40px;
+    height: 30%;
+    color: white;
+}
+.dettagli p{
+	font-family: cursive;
+}
+
+.prezzo{
+	color:white;
+}
+
+.prezzo h4{
+	font-size: 1.2em;
+}
+ .prezzo p{
+ 	font-size: 1.1em;
+ }
+ 
+ .bottone{
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+ }
+ 
+ .acquista{
+    background-color: var(--blu);
+    border: 2px solid black;
+    font-size: 1.2em;
+    color: white;
+    transition: 0.6s;
+    font-style: bold;
+    border-radius: 14px;
+    font-family: 'Andika';
+ 	
+ }
+ 
+ .acquista:hover{
+ 	font-size:1.35em;
+ 	border: 2px solid white;
+ 	color: black;
+ 	transition : 0.6s;
+ 	border-radius:15px;
+ }
+ .informazione{
+ 	display: flex;
+    color: white;
+    width: 100%;
+    text-align: center;
+ }
+ .quantità{
+ 	width: 50%;
+    margin: auto;
+ }
+ 
+ .genere{
+    width: 50%;
+    margin: auto;
+ }
+ 
+ 
+.form-container{
+	margin: auto;
+    margin-top: 50px;
+    /* text-align: center; */
+    background: linear-gradient(#020202e6,#00000052);
+    width: 50%;
+    border: 3px solid var(--blu);
+    /* margin-top: 5em; */
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #00ffff6b;
+}
+
+.control{
+	color: white;
+    padding: 0.5em;
+    margin-left: 20px;
+}
+
+.control1{
+	padding-top : 1em;
+	padding-bottom : 1em;
+	text-align: center;
+}
+
+
+.update{
+    width: 80%;
+    padding: 7px;
+    border-width: 2px;
+    outline: none;
+    margin: 0.2em 0;
+    border-radius: 5px;
+    border-style: double;
+    background-color: #26262600;
+    color: white;
+    border-color: var(--blu);
+}
+
+.first{
+	
+    width: 100%;
+   
+}
+
+.second{
+	width: 100%;
+    margin-left: 30px;
+}
+
+h5{
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 0em;
+	color : #00ffff6b;
+}
+
+select option{
+	color:black;
+}
+
+.inputAggiorna{
+	    background: var(--primary);
+    width: 60%;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.inputAggiorna:hover{
+	opacity: 1;
+	border: var(--blu) solid;
+}
+
+.alink{
+	margin: auto;
+    color: #fff;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 30px;
+    text-decoration: auto;
+    padding-right: 30px;
+}
+
+.link{
+	padding:10px;
+	text-align: center;
+}
+
+.link:hover{
+	color: var(--blu);
+}
+ 
+
+@media screen and (max-width: 1040px) {
+	.prodotto{
+		width:95%;
+	}
+
+} 
+
+
+@media screen and (max-width: 850px) {
+	.prodotto{
+		display:block;
+		height:unset;
+    	border: 3px solid var(--blu);
+    	margin: auto;
+    	margin-top: 30px;
+    	background: linear-gradient(#0000002b,#f2f2f20f);
+    	border-radius: 10px;
+    	box-shadow: 7px 7px 60px #00ffff6b;
+	}
+	
+	.galleria{
+		all:initial;
+		width: 100%;
+	}
+	
+	
+	.contenitoreCopertina {
+    	all:initial;
+    	width: 250px;
+    	margin: auto;
+    	display: flex;
+    	margin-top: 40px;
+    	border-radius: 10px;
+    	border: 4px solid var(--blu);
+	}
+
+	.inserisciRec {
+		margin-left:0px;
+    	text-align: center;
+    	margin-top: 5%;
+	}
+	
+	.nome{
+		font-size: 0.9em;
+	}
+	
+	.schedaProdotto{
+		all:initial;
+		font-family: 'Andika';
+    	font-weight: normal;
+    	font-style: normal;
+		width:90%;
+		margin:auto;
+		text-align: center;
+	}
+	
+	.bottone{
+	    width: 100%;
+    	text-align: center;
+    	margin-top: 6%;
+    	margin-bottom: 6%;
+    }
+    
+    .recensione{
+    	width:100%;
+    	min-height: 38px;
+    }
+    
+    .recensioneProdotto {
+    	width: 77%;
+    }
+    
+    .stelle{
+    width:unset;
+    }
+    
+    .form-container{
+    	width:95%;
+    }
+} 
