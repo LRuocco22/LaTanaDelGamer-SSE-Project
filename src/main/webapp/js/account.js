@@ -21,82 +21,82 @@ function valida() {
 	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	var lettere = /^[A-Za-z ]+$/;
 	
-	if(username.value.length < 4 || username.value.length > 12 ) {
+	if (username.value.length < 4 || username.value.length > 12) {
 		alert("Il campo username deve contenere tra i 5 e i 12 caratteri");
 		username.focus();
 		return false;
 	}
 	
-	if(!passwd.value.match(password)) {
+	if (!passwd.value.match(password)) {
 		alert("Il campo password deve contenere almeno 1 numero, 1 lettera maiuscola e 1 minuscola");
 		passwd.focus();
 		return false;
 	}
 	
-	if(!email.value.match(mailformat)) {
+	if (!email.value.match(mailformat)) {
 		alert("Formato email sbagliato");
 		email.focus();
 		return false;
 	}
 	
-	if(nome.value.length < 3 || nome.value.length > 50 || !nome.value.match(lettere)) {
+	if (nome.value.length < 3 || nome.value.length > 50 || !nome.value.match(lettere)) {
 		alert("Inserisci un nome corretto");
 		nome.focus();
 		return false;
 	}
 	
-	if( cognome.value.length < 3 || cognome.value.length > 50 || !cognome.value.match(lettere)) {
+	if (cognome.value.length < 3 || cognome.value.length > 50 || !cognome.value.match(lettere)) {
 		alert("Inserisci un cognome corretto");
 		cognome.focus();
 		return false;
 	}	
 	
-	if(!data.value.match(datas)) {
+	if (!data.value.match(datas)) {
 		alert("Formato corretto Data Di Nascita: AAAA-MM-GG");
 		data.focus();
 		return false;
 	}	
 	
-	if(via.value.length < 2 || via.value.length > 50) {
+	if (via.value.length < 2 || via.value.length > 50) {
 		alert("Inserisci una via corretta");
 		via.focus();
 		return false;
 	}
 	
-	if(!numero.value.match(intero)){
+	if (!numero.value.match(intero)) {
 		alert("Inserire solo numeri positivi");
 		numero.focus();
 		return false;
 	}
 	
-	if(numero.value.length < 1){
+	if (numero.value.length < 1) {
 		alert("Inserisci un numero valido");
 		numero.focus();
 		return false;
 	}	
 	
-	if(cap.value.length < 5){
+	if (cap.value.length < 5) {
 		alert("Inserire un cap formato da 5 cifre");
 		cap.focus();
 		return false;
 	}
 		
-	if(!cap.value.match(intero)){
+	if (!cap.value.match(intero)) {
 		alert("Inserire un cap formato da 5 cifre");
 		cap.focus();
 		return false;
 	}
 		
-	if(citta.value.length < 2 || citta.value.length > 50) {
+	if (citta.value.length < 2 || citta.value.length > 50) {
 		alert("Inserire una città corretta");
 		citta.focus();
 		return false;
 	}
 	
-	if(provincia.value.length < 2 || provincia.value.length > 50) {
+	if (provincia.value.length < 2 || provincia.value.length > 50) {
 		alert("Inserire una provincia valida");
 		provincia.focus();
-		return false
+		return false;
 	}
 	
 }
@@ -122,91 +122,86 @@ function valida3() {
 	var lettere = /^[A-Za-z ]+$/;
 	
 	
-	if(nome.value.length < 3 || nome.value.length > 50 || !nome.value.match(lettere)) {
+	if (nome.value.length < 3 || nome.value.length > 50 || !nome.value.match(lettere)) {
 		alert("Inserisci un nome corretto");
 		nome.focus();
 		return false;
 	}
 	
-	if( cognome.value.length < 3 || cognome.value.length > 50 || !cognome.value.match(lettere)) {
+	if (cognome.value.length < 3 || cognome.value.length > 50 || !cognome.value.match(lettere)) {
 		alert("Inserisci un cognome corretto");
 		cognome.focus();
 		return false;
 	}	
 	
-		if(!email.value.match(mailformat)) {
+	if (!email.value.match(mailformat)) {
 		alert("Formato email sbagliato");
 		email.focus();
 		return false;
 	}
 	
-	if(!passwd.value.match(password)) {
+	if (!passwd.value.match(password)) {
 		alert("Il campo password deve contenere almeno 1 numero, 1 lettera maiuscola e 1 minuscola");
 		passwd.focus();
 		return false;
 	}
 	
 	
-	if(username.value.length < 4 || username.value.length > 12 ) {
+	if (username.value.length < 4 || username.value.length > 12) {
 		alert("Il campo username deve contenere tra i 5 e i 12 caratteri");
 		username.focus();
 		return false;
 	}
 	
-	
-
-	
-	if(!data.value.match(datas)) {
+	if (!data.value.match(datas)) {
 		alert("Formato corretto Data Di Nascita: AAAA-MM-GG");
 		data.focus();
 		return false;
 	}	
 	
-	if(via.value.length < 2 || via.value.length > 50) {
+	if (via.value.length < 2 || via.value.length > 50) {
 		alert("Inserisci una via corretta");
 		via.focus();
 		return false;
 	}
 	
-	if(!numero.value.match(intero)){
+	if (!numero.value.match(intero)) {
 		alert("Inserire solo numeri positivi");
 		numero.focus();
 		return false;
 	}
 	
-	if(numero.value.length < 1){
+	if (numero.value.length < 1) {
 		alert("Inserisci un numero valido");
 		numero.focus();
 		return false;
 	}	
 	
-	if(cap.value.length < 5){
+	if (cap.value.length < 5) {
 		alert("Inserire un cap formato da 5 cifre");
 		cap.focus();
 		return false;
 	}
 		
-	if(!cap.value.match(intero)){
+	if (!cap.value.match(intero)) {
 		alert("Inserire un cap formato da 5 cifre");
 		cap.focus();
 		return false;
 	}
 		
-	if(citta.value.length < 2 || citta.value.length > 50) {
+	if (citta.value.length < 2 || citta.value.length > 50) {
 		alert("Inserire una città corretta");
 		citta.focus();
 		return false;
 	}
 	
-	if(provincia.value.length < 2 || provincia.value.length > 50) {
+	if (provincia.value.length < 2 || provincia.value.length > 50) {
 		alert("Inserire una provincia valida");
 		provincia.focus();
-		return false
+		return false;
 	}
 	
 }
-
-
 
 function valida1() {
 
@@ -226,308 +221,211 @@ function valida1() {
 	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	var lettere = /^[A-Za-z ]+$/;
 	
-	if(username.value.length < 4 || username.value.length > 12 ) {
+	if (username.value.length < 4 || username.value.length > 12) {
 		alert("Il campo username deve contenere tra i 5 e i 12 caratteri");
 		username.focus();
 		return false;
 	}
 	
-	
-	
-	if(!email.value.match(mailformat)) {
+	if (!email.value.match(mailformat)) {
 		alert("Formato email sbagliato");
 		email.focus();
 		return false;
 	}
 	
-	if(nome.value.length < 3 || nome.value.length > 50 || !nome.value.match(lettere)) {
+	if (nome.value.length < 3 || nome.value.length > 50 || !nome.value.match(lettere)) {
 		alert("Inserisci un nome corretto");
 		nome.focus();
 		return false;
 	}
 	
-	if( cognome.value.length < 3 || cognome.value.length > 50 || !cognome.value.match(lettere)){
+	if (cognome.value.length < 3 || cognome.value.length > 50 || !cognome.value.match(lettere)) {
 		alert("Inserisci un cognome corretto");
 		cognome.focus();
 		return false;
 	}	
 	
-	if(!data.value.match(datas)) {
+	if (!data.value.match(datas)) {
 		alert("Formato corretto Data Di Nascita: AAAA-MM-GG");
 		data.focus();
 		return false;
 	}	
 		
 
-	if(via.value.length < 2 || via.value.length > 50) {
+	if (via.value.length < 2 || via.value.length > 50) {
 		alert("Inserisci una via corretta");
 		via.focus();
 		return false;
 	}
 	
-	if(!numero.value.match(intero)){
+	if (!numero.value.match(intero)) {
 		alert("Inserire solo numeri positivi");
 		numero.focus();
 		return false;
 	}
 	
-	if(numero.value.length < 1){
+	if (numero.value.length < 1) {
 		alert("Inserisci un numero valido");
 		numero.focus();
 		return false;
 	}
 	
-	if(cap.value.length < 5){
+	if (cap.value.length < 5) {
 		alert("Inserire un cap formato da 5 cifre");
 		cap.focus();
 		return false;
 	}
 		
-	if(!cap.value.match(intero)){
+	if (!cap.value.match(intero)) {
 		alert("Inserire un cap formato da 5 cifre");
 		cap.focus();
 		return false;
 	}	
 	
-	if(citta.value.length < 2 || citta.value.length > 50) {
+	if (citta.value.length < 2 || citta.value.length > 50) {
 		alert("Inserire una città corretta");
 		citta.focus();
 		return false;
 	}
 	
-	if(provincia.value.length < 2 || provincia.value.length > 50) {
+	if (provincia.value.length < 2 || provincia.value.length > 50) {
 		alert("Inserire una provincia valida");
 		provincia.focus();
-		return false
+		return false;
 	}	
+}
+
+/* Funzioni di utilità per i messaggi di validazione */
+
+function showValidationMessage(containerId, message, type) {
+	var container = document.getElementById(containerId);
+	if (!container) {
+		return;
+	}
+
+	var p = container.firstElementChild;
+	if (!p) {
+		p = document.createElement("p");
+		container.appendChild(p);
+	}
+
+	p.textContent = message;
+	p.className = "";
+
+	if (type === "error") {
+		p.classList.add("validation-error");
+	} else if (type === "success") {
+		p.classList.add("validation-success");
+	}
+}
+
+function clearValidationMessage(containerId) {
+	var container = document.getElementById(containerId);
+	if (!container || !container.firstElementChild) {
+		return;
+	}
+	container.removeChild(container.firstElementChild);
 }
 
 function checkUser(input) {
 	
-    //Reperiamo il valore del campo
-    let temp = input.value;
-    let check = temp.toLowerCase();
+	// Reperiamo il valore del campo
+	var temp = input.value;
+	var check = temp.toLowerCase();
+	var errorContainerId = "errorSpace";
+
+	if (input.value.length <= 4 && input.value.length >= 1) {
+		showValidationMessage(errorContainerId, "Inserire almeno 5 caratteri", "error");
+		return false;
+	} else if (input.value.length > 12) {
+		showValidationMessage(errorContainerId, "Inserire massimo 12 caratteri", "error");
+		return false;
+	}
+
+	// Se non è stato inserito nulla la funzione non viene eseguita
+	if (check === "") {
+		clearValidationMessage(errorContainerId);
+		return false;
+	}
     
-    if(input.value.length <= 4 && input.value.length >= 1) {
-	
-	  var p_block = document.getElementById("errorSpace");
-	  if(document.getElementById("errorSpace").hasChildNodes())
-                {
-                    var p = document.getElementById("errorSpace").childNodes[0];
-                    p.style.color = "red";
-                    p.innerText = "Inserire almeno 5 caratteri";
+	// Un utente non può registrarsi con l'username admin in quanto è username speciale
+	if (check.match(/admin/i)) {
+		alert("Username riservato! Inserire un altro username per continuare");
+		input.value = "";
+		clearValidationMessage(errorContainerId);
+		return false;
+	}
 
-                }
-                //Altrimenti lo creo
-                else
-                {
-                    var tag = document.createElement("p");
-                    tag.style.color = "red";
-                    tag.style.visibility = "block";
-                    var text = document.createTextNode("Inserire almeno 5 caratteri");
-                    tag.appendChild(text);
-                    p_block.appendChild(tag);
-                }
-                
-	  return false;
-	} else  if(input.value.length > 12) {
-	
-	  var p_block = document.getElementById("errorSpace");
-	  if(document.getElementById("errorSpace").hasChildNodes())
-                {
-                    var p = document.getElementById("errorSpace").childNodes[0];
-                    p.style.color = "red";
-                    p.innerText = "Inserire massimo 12 caratteri";
+	// Vengono reperiti tutti gli username dal database
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function () {
+		if (xhttp.readyState === 4 && xhttp.status === 200) {	
+			var JSONobj = JSON.parse(xhttp.responseText);
 
-                }
-                //Altrimenti lo creo
-                else
-                {
-                    var tag = document.createElement("p");
-                    tag.style.color = "red";
-                    tag.style.visibility = "block";
-                    var text = document.createTextNode("Inserire massimo 12 caratteri");
-                    tag.appendChild(text);
-                    p_block.appendChild(tag);
-                }
-                
-	  return false;
-	} 
-	
-	else  {
+			var flag = JSONobj.some(function (item) {
+				return item.username === check;
+			});
 
-    //Se non è stato inserito nulla la funzione non viene eseguita
-    if(check == "" ) {
-        
-        if(document.getElementById("errorSpace").hasChildNodes()){
-           var p = document.getElementById("errorSpace").childNodes[0];
-           p.remove();
-        }
-    return false;
-    }
-    
-    //Un utente non può registrarsi con l'username admin in quanto è username speciale
-    //Se è stato inserito questo username la registrazione non può continuare
-    if(check.match(/admin/i))
-    {
-        alert("Username riservato! Inserire un altro username per continuare");
-        input.value = "";
-        var p = document.getElementById("errorSpace").childNodes[0];
-        p.remove();
-        return false;
-    }
-            //Vengono reperiti tutti gli username dal database
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-    	
-        if(xhttp.readyState == 4 && xhttp.status == 200)
-        {	
-            var JSONobj = JSON.parse(xhttp.responseText);
+			// Caso in cui l'username è presente
+			if (flag) {
+				showValidationMessage(
+					errorContainerId,
+					"Utente già presente! Inserire un altro nome",
+					"error"
+				);
+			} else {
+				// Caso in cui l'username inserito è univoco
+				showValidationMessage(
+					errorContainerId,
+					"Nome valido!",
+					"success"
+				);
+			}
+		}
+	};
 
-			
-            var flag = false;
-
-            //Tra tutti gli username si cerca se esiste uno uguale a quello inserito
-            for( i = 0; i < JSONobj.length; i++)
-            {
-                var item = JSONobj[i];
-                if(item.username == check)
-                    flag = true;
-            }
-
-            //Ci reperiamo lo spazio dove viene segnalato se l'username inserito è valido o meno
-            var p_block = document.getElementById("errorSpace");
-
-            //Caso in cui l'username è presente
-            if(flag)
-            {
-                //Se è stato creato il p, allora lo modifico
-                if(document.getElementById("errorSpace").hasChildNodes())
-                {
-                    var p = document.getElementById("errorSpace").childNodes[0];
-                    p.style.color = "red";
-                    p.innerText = "Utente già presente! Inserire un altro nome";
-
-                }
-                //Altrimenti lo creo
-                else
-                {
-                    var tag = document.createElement("p");
-                    tag.style.color = "red";
-                    tag.style.visibility = "block";
-                    var text = document.createTextNode("Utente già presente! Inserire un altro nome");
-                    tag.appendChild(text);
-                    p_block.appendChild(tag);
-                }
-            }
-            //Caso in cui l'username inserito dall'utente è univoco, ovvero non è presente nel database
-            else
-            {
-
-                //Se esiste il p allora lo modifico
-               if(document.getElementById("errorSpace").hasChildNodes())
-               {
-                   var p = document.getElementById("errorSpace").childNodes[0];
-                   p.style.color = "green";
-                   p.innerText = "Nome valido!";
-
-
-               }
-               //Non esiste il p quindi lo creo
-               else
-               {
-                   var tag = document.createElement("p");
-                   tag.style.color = "green";
-                   tag.style.visibility = "block";
-                   var text = document.createTextNode("Nome valido!");
-                   tag.appendChild(text);
-                   p_block.appendChild(tag);
-               }
-            }
-
-        }
-    }
-
-    xhttp.open("GET", "/LaTanaDelGamer/gestione?valore=Utenti", true);
-    xhttp.send();}
+	xhttp.open("GET", "/LaTanaDelGamer/gestione?valore=Utenti", true);
+	xhttp.send();
 }
 
 function checkEmail(input) {
 	
-    //Reperiamo il valore del campo
-    let temp = input.value;
-    let check = temp.toLowerCase();
-            //Vengono reperiti tutti gli username dal database
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-    	
-        if(xhttp.readyState == 4 && xhttp.status == 200)
-        {	
-            var JSONobj = JSON.parse(xhttp.responseText);
+	// Reperiamo il valore del campo
+	var temp = input.value;
+	var check = temp.toLowerCase();
+	var errorContainerId = "errorSpace1";
 
+	// Vengono reperite tutte le email dal database
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function () {
+		
+		if (xhttp.readyState === 4 && xhttp.status === 200) {	
+			var JSONobj = JSON.parse(xhttp.responseText);
+
+			// Se non è stato inserito nulla la funzione non viene eseguita
+			if (check === "") {
+				clearValidationMessage(errorContainerId);
+				return;
+			}
 			
-            var flag = false;
+			var flag = JSONobj.some(function (item) {
+				return item.e_mail === check;
+			});
 
-            //Tra tutte le email si cerca se esiste una uguale a quella inserita
-            for( i = 0; i < JSONobj.length; i++)
-            {
-                var item = JSONobj[i];
-                if(item.e_mail == check)
-                    flag = true;
-            }
+			// Caso in cui la mail è presente
+			if (flag) {
+				showValidationMessage(
+					errorContainerId,
+					"E-Mail già presente!",
+					"error"
+				);
+			} else {
+				// Caso in cui la mail non è presente: rimuovo eventuale messaggio
+				clearValidationMessage(errorContainerId);
+			}
+		}
+	};
 
-            //Ci reperiamo lo spazio dove viene segnalato se la mail inserita è valida o meno
-            var p_block = document.getElementById("errorSpace1");
-            
-                if(check == "" ) {
-        
-        if(document.getElementById("errorSpace1").hasChildNodes()){
-           var p = document.getElementById("errorSpace1").childNodes[0];
-           p.remove();
-        }
-    return false;
-    }
-
-            //Caso in cui la mail è presente
-            if(flag)
-            {
-                //Se è stato creato il p, allora lo modifico
-                if(document.getElementById("errorSpace1").hasChildNodes())
-                {
-                    var p = document.getElementById("errorSpace1").childNodes[0];
-                    p.style.color = "red";
-                    p.innerText = "E-Mail già presente!";
-
-                }
-                //Altrimenti lo creo
-                else
-                {
-                    var tag = document.createElement("p");
-                    tag.style.color = "red";
-                    tag.style.visibility = "block";
-                    var text = document.createTextNode("E-Mail già presente!");
-                    tag.appendChild(text);
-                    p_block.appendChild(tag);
-                }
-            }
-            //Caso in cui la mail inserita dall'utente è univoca, ovvero non è presente nel database
-            else
-            {
-
-                //Se esiste il p allora lo modifico
-               if(document.getElementById("errorSpace1").hasChildNodes()){
-           var p = document.getElementById("errorSpace1").childNodes[0];
-           p.remove();
-        }
-               
-            }
-
-        }
-    }
-
-    xhttp.open("GET", "/LaTanaDelGamer/gestione?valore=Utenti", true);
-    xhttp.send();}
-
-        
-       
-
+	xhttp.open("GET", "/LaTanaDelGamer/gestione?valore=Utenti", true);
+	xhttp.send();
+}
