@@ -1,10 +1,12 @@
 package it.unisa.model;
 import java.util.ArrayList;
 
+
 public class Carrello {
 	
     private ArrayList<ItemCarrello> nelCarrello = new ArrayList<>();
     private float totale = 0;
+    private java.util.Map<Integer, ItemCarrello> indexById = new java.util.HashMap<>();
     
     public void aggiungiProdotto(ItemCarrello item) {
     	
@@ -32,17 +34,8 @@ public class Carrello {
         this.totale = 0;
     }
     
-    public ItemCarrello doretrieveById(int id)
-    {
-    	ItemCarrello prodotto = null;
-        for (int i = 0; i < nelCarrello.size(); i++)
-        {
-            if (nelCarrello.get(i).getProdotto().getId_prodotto() == id)
-            {
-                prodotto = nelCarrello.get(i);
-            }
-        }
-        return prodotto;
+    public ItemCarrello doretrieveById(int id) {
+        return indexById.get(id);
     }
     
     public int getQuantityById(int id) {
@@ -60,17 +53,15 @@ public class Carrello {
     }
 
     
-    public float getTotale()
-    {
-    	this.totale= 0;
-    	for(int i = 0; i < nelCarrello.size(); i++) {
-    		ItemCarrello item = nelCarrello.get(i);
-    		this.totale += item.getProdotto().getPrezzo() * item.getQuantity();	
-    	}
-    	String temp = String.format("%.2f",this.totale);
-    	temp= temp.replaceAll("," , ".");
-    	this.totale= Float.parseFloat(temp);
-    	return this.totale;
+    public float getTotale() {
+        float tot = 0;
+        for (int i = 0; i < nelCarrello.size(); i++) {
+            ItemCarrello item = nelCarrello.get(i);
+            tot += item.getProdotto().getPrezzo() * item.getQuantity();
+        }
+        // arrotondamento semplice a 2 decimali
+        tot = Math.round(tot * 100f) / 100f;
+        return tot;
     }
     
     public int getSize()
