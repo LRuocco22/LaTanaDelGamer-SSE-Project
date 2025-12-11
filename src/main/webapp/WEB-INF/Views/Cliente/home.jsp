@@ -68,7 +68,7 @@
 					 			
 							 		<div class="contenitoreFoto">	
 							 			<div id="copertina" class="copertina">
-							 				<img  class ="foto" id="foto" src="/LaTanaDelGamer/prodotti/immagine?id_prodotto=<%=prodotto.getId_prodotto()%>" onerror="this.src= '/LaTanaDelGamer/immagini/noimage.jpg'" title="copertina">		 
+							 				<img  class ="foto" id="foto" src="/LaTanaDelGamer/prodotti/immagine?id_prodotto=<%=prodotto.getId_prodotto()%>" loading="lazy" onerror="this.src= '/LaTanaDelGamer/immagini/noimage.jpg'" title="copertina">		 
 							 			</div>
 							 			
 							 		</div>
